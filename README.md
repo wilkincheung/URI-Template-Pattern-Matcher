@@ -33,8 +33,19 @@ Matching URL against Tree with 10,000 templates takes under 2 ms.
 
 ...with debug log turned off.
 
-For use-cases, check out PatternMatchingTrieTest.java
+## Sample Code
 
+        PatternMatchingTrie tree = new PatternMatchingTrie<>();       // Create the Tree
+        tree.addTemplate("http://abc.com/image/{filename}");          // add first template 
+        tree.addTemplate("http://abc.com/image/{filename}/{size}");   // add second template
+        tree.addTemplate("http://abc.com/puppy/{filename}");          // add third template
+        
+        tree.matches("http://abc.com/image/123.jpg");           // return true, match first template
+        tree.matches("http://abc.com/image/123.jpg/1600x900");  // return true, match second template
+        tree.matches("http://abc.com/kitty/123.jpg");           // return false, no matching template
+        tree.matches("http://abc.com/puppy/1/2");               // return false, no matching template
+        
+For more use cases, check out PatternMatchingTrieTest.java
 
 ## NOTES
 
