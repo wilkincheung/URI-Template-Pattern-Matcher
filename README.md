@@ -1,6 +1,7 @@
 # URI-Template-Pattern-Matcher
 
 OVERVIEW
+
 Compare URL against many RFC 6570 URI Templates Level 1 to find a match. Code is written in Java.
 
 
@@ -10,6 +11,7 @@ granted access.
 
 
 For example, incoming URL is:
+
   http://prodigi.com/image/123.jpg
 
 Does that URL match the following URI Template and be granted access? Yes. This is a very basic and simple URI Template.
@@ -57,12 +59,13 @@ Based on testing, de-serializing Tree with 1,000 templates takes about 30 ms.
 
 PREREQUISITES
 
-Oracle Java 7 JDK
-Apache Maven
+* Oracle Java 7 JDK
+* Apache Maven
 
 
 INSTALLATION
+
 Download the source code from GitHub. In root directory, type:
 
-  mvn install
+* mvn install
 
