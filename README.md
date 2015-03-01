@@ -1,6 +1,6 @@
 # URI-Template-Pattern-Matcher
 
-OVERVIEW
+## OVERVIEW
 
 Compare URL against many RFC 6570 URI Templates Level 1 to find a match. Code is written in Java.
 
@@ -12,13 +12,12 @@ granted access.
 
 For example, incoming URL is:
 
-  http://prodigi.com/image/123.jpg
+    http://prodigi.com/image/123.jpg
 
 Does that URL match the following URI Template and be granted access? Yes. This is a very basic and simple URI Template.
 There are more complicated ones. See PatternMatchingTrieTest.java for details.
 
-  http://prodigi.com/image/{imageId}
-
+    http://prodigi.com/image/{imageId}
 
 Let's say there are 10,000 URI Templates defined, if URI template is organized as a linked list, there will be up to
 10,000 comparison, and on average, 5,000 comparisons. If there is a match. If there is no match, then all 10,000.
@@ -37,7 +36,7 @@ Matching URL against Tree with 10,000 templates takes under 2 ms.
 For use-cases, check out PatternMatchingTrieTest.java
 
 
-NOTES
+## NOTES
 
 * Character encoding is UTF-8
 
@@ -57,15 +56,12 @@ Based on testing, de-serializing Tree with 1,000 templates takes about 30 ms.
 * The code is deployed to run in Redhat 6 / Tomcat 7 / Spring Boot.
 
 
-PREREQUISITES
-
+## PREREQUISITES
 * Oracle Java 7 JDK
 * Apache Maven
 
-
-INSTALLATION
-
+## INSTALLATION
 Download the source code from GitHub. In root directory, type:
 
-* mvn install
+    mvn install
 
