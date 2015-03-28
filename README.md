@@ -76,3 +76,4 @@ Download the source code from GitHub. In root directory, type:
 
     mvn install
 
+NOTE: ```mvn install``` is used only for convenience. It does not install software... It runs the full set of tests. 
